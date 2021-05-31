@@ -26,13 +26,12 @@
         $addordergoods = $goods->addordergoods();
 
     }else if(isset($_POST['AddOrderFood'])){
-
+        
         $addorderfood = $food->addorderfood();
 
     }else if(isset($_POST['AddOrderMedical'])){
         
         $addmedical = $medical->addordermedical();
-
     }
 
     
@@ -130,17 +129,13 @@
                 <input type="text" name="FD_NAME" value="<?php echo $row['FD_NAME']; ?>" hidden>
                 
                 <input type="text" name="FD_PRICE" value="<?php echo $row['FD_PRICE']; ?>" hidden>
-<!--                <input type="text" name="FD_PROID" value="--><?php //echo $row['FD_PROID']; ?><!--" hidden> -->
+                <!--<input type="text" name="FD_PROID" value="<?php //echo $row['FD_PROID']; ?>" hidden> -->            
                     <tr>
                         <td rowspan="13"><img style="width: 300px; " src="../IMG/<?php echo $row['FD_IMAGE'];?>" ></td>
                         <td><h2><?php echo $row['FD_NAME'];?></h2>
 
                         </td>
                     </tr>
-<!--                    <tr>-->
-<!--                        <td></td>-->
-<!--                        <td><h2>ID --><?php //echo $row['SP_ID'];?><!--</h2></td>-->
-<!--                    </tr>-->
                     <tr>
                         <td></td>
                         <td><h2>RM <?php echo $row['FD_PRICE'];?></h2></td>
@@ -376,8 +371,7 @@
                     foreach($details as $row) {
              ?>
                 <form action="" method="post">
-                <table style="font-size: 15px;">
-
+                <table style="font-size: 15px;"> 
                 <input type="text" name="CUST_ID" value="<?php echo $_SESSION['CUST_ID']; ?>" hidden>
                 <input type="text" name="CUST_NAME" value="<?php echo $_SESSION['CUST_NAME']; ?>" hidden>
                 <input type="text" name="CUST_ADDRESS" value="<?php echo $_SESSION['CUST_ADDRESS']; ?>" hidden>
@@ -468,28 +462,28 @@
                 <div class="col kotakkedai text-center py-4 m-4">
                     <a href="CustomerIndex.php?food">
                         <legend><h1>Food Section</h1></legend>
-                        <img src="../IMG/food.jpg" style="width: 100%;height: 70%;margin-top: 10px;border-radius: 10px;">
+                        <img src="../IMG/food.jpg"   style="width: 100%;height: 70%;margin-top: 10px;border-radius: 10px;">
                     <button class="btn btn-info button2 btn-block mt-2"><h4>View</h4></button>
                     </a><br>
                 </div>
                 <div class="col kotakkedai text-center py-4 m-4">
                     <a href="CustomerIndex.php?goods">
                         <legend><h1>Goods Section</h1></legend>
-                        <img src="../IMG/goods.jpg" style="width: 100%;height: 70%;margin-top: 10px;border-radius: 10px;">
+                        <img src="../IMG/goods.jpg"   style="width: 100%;height: 70%;margin-top: 10px;border-radius: 10px;">
                         <button class="btn btn-info button2 btn-block mt-2"><h4>View</h4></button>
                     </a><br>
                 </div>
                 <div class="col kotakkedai text-center py-4 m-4">
                     <a href="CustomerIndex.php?medical">
                         <legend><h1>Medical Section</h1></legend>
-                        <img src="../IMG/medical.jpg" style="width: 100%;height: 70%;margin-top: 10px;border-radius: 10px;">
+                        <img src="../IMG/medical.jpg"   style="width: 100%;height: 70%;margin-top: 10px;border-radius: 10px;">
                     <button class="btn btn-info button2 btn-block mt-2"><h4>View</h4></button>
                     </a><br>
                 </div>
                 <div class="col kotakkedai text-center py-4 m-4">
                     <a href="CustomerIndex.php?pet">
                         <legend><h1>Pet Assist Section</h1></legend>
-                        <img src="../IMG/petassist.jpg" style="width: 100%;height: 70%;margin-top: 10px;border-radius: 10px;">
+                        <img src="../IMG/petassist.jpg"   style="width: 100%;height: 70%;margin-top: 10px;border-radius: 10px;">
                         <button class="btn btn-info button2 btn-block mt-2"><h4>View</h4></button>
                     </a><br>
                
