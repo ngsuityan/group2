@@ -111,9 +111,9 @@ CREATE TABLE `foodproduct` (
 --
 
 INSERT INTO `foodproduct` (`FD_PROID`, `SP_ID`, `FD_NAME`, `FD_TYPE`, `FD_BRAND`, `FD_PRICE`, `FD_STOCK`, `FD_EXPIRY_DATE`, `FD_CERTIFICATIONS`, `FD_SHIP_FEE`, `FD_ORIGIN`, `FD_SHIPS_FROM`, `FD_IMAGE`, `FD_PUBLISH`, `FD_DESCRIPTIONS`) VALUES
-(1, 2, 'Megi Kari', 'Fast Food', 'Megi', 4, 'Available', '2021-01-24', 'Halal Jakim', 4, 'Malaysia', 'Kuantan', 'megikari.jpg', '- ', 'mari beli megi paling laris paling sedap'),
-(2, 2, 'Megi Tomyam Udang', 'Fast Food', 'Megi', 4.5, 'Available', '2021-06-14', 'Halal Jakim', 4, 'Malaysia', 'Kuantan', 'megitomyam.jpg', '- ', 'mari beli megi paling laris paling sedap'),
-(4, 5, 'food2', 'food2', 'food', 6, '2', '2020-07-25', 'food', 4, 'selangor', 'selangor', 'WhatsApp Image 2020-07-18 at 12.39.34 PM.jpeg', 'Yes', 'food');
+(1, 2, 'Maggi Curry', 'Instant Noodle', 'Maggi', 4, 'Available', '2022-01-24', 'Halal Jakim', 4, 'Malaysia', 'Kuantan', 'megikari.jpg', '- ', 'mari beli megi paling laris paling sedap'),
+(2, 2, 'Maggi Tomyam Udang', 'Instant Noodle', 'Maggi', 4.5, 'Available', '2022-06-14', 'Halal Jakim', 4, 'Malaysia', 'Kuantan', 'megitomyam.jpg', '- ', 'mari beli megi paling laris paling sedap'),
+(4, 5, 'Maggi Mi Goreng Cili Kampung', 'Instant Noodle', 'Maggi', 5, 'Available', '2022-07-25', 'Halal Jakin', 4, 'Malaysia', 'Kuantan', 'maggi cili kampung.jpg', '-', 'Maggi Mi Goren Cili ala Kampung (78g x 5 Packs)');
 
 -- --------------------------------------------------------
 
