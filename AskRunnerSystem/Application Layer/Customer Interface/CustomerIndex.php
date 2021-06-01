@@ -50,7 +50,7 @@
             ?>
             
             <!--    after select product type    -->
-            <div class="row">
+            <div class="col">
                 <div class="col-md-3 kotakkedai text-center py-4 m-4">
                     <a href="CustomerIndex.php?type=food&proid=<?php echo $proid?>">
                         <legend><h1><?php echo $row['FD_NAME'];?></h1></legend>
