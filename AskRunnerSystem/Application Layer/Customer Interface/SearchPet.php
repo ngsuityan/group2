@@ -50,8 +50,7 @@ foreach($view as $row) {
 			<?php
 				}
 			?>
-		</tbody>
-	</table>
+		
 <?php
 	}
 $conn = null;
