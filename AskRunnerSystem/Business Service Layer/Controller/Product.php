@@ -46,6 +46,12 @@
             return $pet-> searchpetdata();
 		}
 
+		function spsearchpet($SP_ID, $keyword){
+			$pet = new pet();
+			$pet->keyword =$_POST['keyword'];
+            return $pet-> spsearchpetdata();
+		}
+
 		function editpet($PET_PROID){
 			$pet = new pet();
 
