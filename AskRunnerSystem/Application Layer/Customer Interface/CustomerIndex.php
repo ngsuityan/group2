@@ -94,20 +94,18 @@
             <?php
               }
                }else if(isset($_GET['pet'])){
-                    $view = $pet->allpet();
-                    foreach($view as $row) {
-                        $proid=$row['PET_PROID'];
-            ?>
-             <div class="row">
-                <div class="col-md-3 kotakkedai text-center py-4 m-4">
-                    <a href="CustomerIndex.php?type=pet&proid=<?php echo $proid?>">
-                        <legend><h1><?php echo $row['PET_NAME'];?><?php echo "<br> RM ";?>  
-                            <?php echo $row['PET_PRICE'];?></h1></legend>
-                        <img src="../IMG/<?php echo $row['PET_IMAGE'];?>"   style="width: 100%;height: 70%;margin-top: 10px;border-radius: 10px;">
-                    <button class="btn btn-info button2 btn-block mt-2"><h4>View</h4></button>
-                    </a>
+                    <div class="col-md-8">
+            <form method="POST" action="">
+                <div class="form-inline">
+                    <input type="search" class="form-control" name="keyword" value="<?php echo isset($_POST['keyword']) ? $_POST['keyword'] : '' ?>" placeholder="Search here..." required=""/>
+                    <button class="btn btn-success" name="search">Search</button>
+                    <a href="./CustomerIndex.php?pet" class="btn btn-info">Reload</a>
                 </div>
-            </div>
+            </form>
+            <br /><br />
+            <?php include'SearchPet.php'?>
+        </div>
+    </div>
             <!--    end after choose product type to view    -->
             <!--    view product details after choose the product to view    -->
             <?php

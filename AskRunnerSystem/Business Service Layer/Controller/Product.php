@@ -40,6 +40,12 @@
 			return $pet-> allpetdata();
 		}
 
+		function searchpet($keyword){
+			$pet = new pet();
+			$pet->keyword =$_POST['keyword'];
+            return $pet-> searchpetdata();
+		}
+
 		function editpet($PET_PROID){
 			$pet = new pet();
 

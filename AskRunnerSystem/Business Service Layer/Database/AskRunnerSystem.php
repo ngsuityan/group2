@@ -377,6 +377,11 @@ class pet{
 		$petsql = "select * from petproduct";
 		return pet::connect()->query($petsql);
 	}
+	function searchpetdata(){
+		$keyword = $_POST['keyword'];
+		$petsql = "select * from `petproduct` WHERE `PET_NAME` LIKE '%$keyword%' or `PET_TYPE` LIKE '%$keyword%' or `PET_BRAND` LIKE '%$keyword%'";
+		return pet::connect()->query($petsql);
+	}
 	function updatepet(){
 		 
 		$sql = "update petproduct set  PET_NAME=:PET_NAME ,  PET_TYPE=:PET_TYPE , PET_FUNCTION=:PET_FUNCTION , PET_BRAND=:PET_BRAND , PET_LIFE_STAGE=:PET_LIFE_STAGE , PET_PRICE=:PET_PRICE ,  PET_PRICE=:PET_PRICE,  PET_STOCK=:PET_STOCK,  PET_STOCK=:PET_STOCK,  PET_EXPIRY_DATE=:PET_EXPIRY_DATE,  PET_SHIP_FEE=:PET_SHIP_FEE,  PET_ORIGIN=:PET_ORIGIN,  PET_SHIPS_FROM=:PET_SHIPS_FROM,  PET_IMAGE=:PET_IMAGE,  PET_PUBLISH=:PET_PUBLISH,  PET_DESCRIPTIONS=:PET_DESCRIPTIONS where PET_PROID=:PET_PROID";
