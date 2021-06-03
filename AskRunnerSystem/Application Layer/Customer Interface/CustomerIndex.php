@@ -54,8 +54,33 @@
                 <div class="col-md-3 kotakkedai text-center py-4 m-4">
                     <a href="CustomerIndex.php?type=food&proid=<?php echo $proid?>">
                         <legend><h1><?php echo $row['FD_NAME'];?></h1></legend>
-                        <img src="../IMG/<?php echo $row['FD_IMAGE'];?>"   style="width: 100%;height: 70%;margin-top: 10px;border-radius: 10px;">
-                    <button class="btn btn-info button2 btn-block mt-2"><h4>View</h4></button>
+                        <img src="../IMG/<?php echo $row['FD_IMAGE'];?>"   style="width: 100%;height: 70%;margin-top: 10px;border-radius: 10px;">                    
+                            <style>
+                            h2 {
+                              color: black;
+                              text-align: left;
+                            }
+                            h5 {
+                            color:black;
+                            text-align: right;
+                            }
+                            </style>
+                            <td><h2  >RM <?php echo $row['FD_PRICE'];?></h2></td>							
+
+                                <!-- Font Awesome Icon Library -->
+                                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                                <style>
+                                     .checked {
+                                     color: orange;
+                                }
+                                </style>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                <td><h5><?php echo $row['FD_SHIPS_FROM'];?></h5></td>		                             
+                        <button class="btn btn-info button2 btn-block mt-2"><h4>View</h4></button>
                     </a>
                 </div>
             </div>
