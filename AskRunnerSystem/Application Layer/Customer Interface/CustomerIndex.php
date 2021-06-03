@@ -97,24 +97,15 @@
                     <div class="col-md-8">
             <form method="POST" action="">
                 <div class="form-inline">
-                    <input type="search" class="form-control" name="keyword" value="<?php echo isset($_POST['keyword']) ? $_POST['keyword'] : '' ?>" placeholder="Search here..." required=""/>&nbsp;
-                    <button class="btn btn-success" name="search">Search</button>&nbsp;
+                    <input type="search" class="form-control" name="keyword" value="<?php echo isset($_POST['keyword']) ? $_POST['keyword'] : '' ?>" placeholder="Search here..." required=""/>
+                    <button class="btn btn-success" name="search">Search</button>
                     <a href="./CustomerIndex.php?pet" class="btn btn-info">Reload</a>
                 </div>
             </form>
             <br /><br />
-            <form method="POST" action="">
-                <div class="form-inline">
-                    <?php echo "Sort price by:"?>&nbsp;<br/>
-                <button class="btn btn-primary" name="asc"> Ascending</button>&nbsp;
-                <button class="btn btn-danger" name="desc"> Descending</button>
-            </div>
-            </form>
-            <br/><br/>
-            
+            <?php include'SearchPet.php'?>
         </div>
     </div>
-    <?php include'SearchPet.php'?>
             <!--    end after choose product type to view    -->
             <!--    view product details after choose the product to view    -->
             <?php

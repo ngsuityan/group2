@@ -382,15 +382,6 @@ class pet{
 		$petsql = "select * from `petproduct` WHERE `PET_NAME` LIKE '%$keyword%' or `PET_TYPE` LIKE '%$keyword%' or `PET_BRAND` LIKE '%$keyword%'";
 		return pet::connect()->query($petsql);
 	}
-	function sortpetascdata(){
-		$petsql = "select * from `petproduct` ORDER BY `PET_PRICE` ASC";
-		return pet::connect()->query($petsql);
-	}
-
-	function sortpetdescdata(){
-		$petsql = "select * from `petproduct` ORDER BY `PET_PRICE` DESC";
-		return pet::connect()->query($petsql);
-	}
 	function spsearchpetdata(){
 		$keyword = $_POST['keyword'];
 		$petsql = "select * from `petproduct` WHERE `PET_NAME` LIKE '%$keyword%' or `PET_TYPE` LIKE '%$keyword%' or `PET_BRAND` LIKE '%$keyword%'";

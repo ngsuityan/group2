@@ -352,7 +352,7 @@
 												<td>
 													<h3 style="color: #061161">Product Stock</h3>
 												</td>
-												<td><input type="text" name="GD_STOCK"  class="form-control input-lg" value="<?php echo $row['GD_STOCK'];?>"  required></td>
+												<td><input type="number" name="GD_STOCK"  class="form-control input-lg" value="<?php echo $row['GD_STOCK'];?>"  required></td>
 											</tr>
 											<tr>
 												<td>
@@ -377,7 +377,7 @@
 													<h3 style="color: #061161">Choose Image</h3>
 												</td>
 												<td>
-													<img style="width: 300px; " src="../IMG/<?php echo $row['GD_IMAGE'];?>" >
+													<input type="text" name="image" class="form-control input-lg" value="<?php echo $row['GD_IMAGE'];?>">
 													<input type="file" name="GD_IMAGE"  class="form-control input-lg" required></td><br>
 											</tr>
 											<tr>
