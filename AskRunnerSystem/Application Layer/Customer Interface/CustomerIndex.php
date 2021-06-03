@@ -97,8 +97,8 @@
                     <div class="col-md-8">
             <form method="POST" action="">
                 <div class="form-inline">
-                    <input type="search" class="form-control" name="keyword" value="<?php echo isset($_POST['keyword']) ? $_POST['keyword'] : '' ?>" placeholder="Search here..." required=""/>
-                    <button class="btn btn-success" name="search">Search</button>
+                    <input type="search" class="form-control" name="keyword" value="<?php echo isset($_POST['keyword']) ? $_POST['keyword'] : '' ?>" placeholder="Search here..." required=""/>&nbsp;
+                    <button class="btn btn-success" name="search">Search</button>&nbsp;
                     <a href="./CustomerIndex.php?pet" class="btn btn-info">Reload</a>
                 </div>
             </form>
