@@ -261,7 +261,7 @@
                     <tr>
                         <td></td>
                         <td>SHIPPING FEE:</td>
-                        <td>RM: <?php echo $row['GD_SHIP_FEE'];?></td>
+                        <td>RM: <?php echo $row['GD_SHIPS_FEE'];?></td>
                     </tr>
                     <tr>
                         <td></td>
@@ -274,10 +274,15 @@
                         <td><?php echo $row['GD_DESCRIPTIONS'];?></td>
                     </tr>
                 </table>
-                <div class="form-style-6">
-                    <input type="submit" name="AddOrderGoods" value="Add Order" >
+                    <div class="form-style-6" >
+                    <input type="submit" name="AddOrderGoods" value="Add Order" onclick="addCart()"  >
                 </div>
                 </center>
+                <script>
+                    function addCart(){
+                        alert("Successfully added to cart!!")
+                    }
+                </script>';
             </form>
 
             <?php
