@@ -103,6 +103,14 @@
                 </div>
             </form>
             <br /><br />
+            <form method="POST" action="">
+                <div class="form-inline">
+                    <?php echo "Sort price by:"?>&nbsp;<br/>
+                <button class="btn btn-primary" name="asc"> Ascending</button>&nbsp;
+                <button class="btn btn-danger" name="desc"> Descending</button>
+            </div>
+            </form>
+            <br/><br/>
             <?php include'SearchPet.php'?>
         </div>
     </div>
