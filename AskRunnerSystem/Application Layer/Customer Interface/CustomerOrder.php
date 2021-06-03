@@ -186,9 +186,11 @@ input[type=number]{
                                 
                                 <td><center>RM <?php echo $row['ORDER_PROD_PRICE']; ?></center></td>
                                 <td>
-                                    <div class="form-style-6">
-                                        <button class="btn btn-danger button2 btn-block mt-2" onclick="window.location.href='../Customer Interface/CustomerOrder.php?deleteOrder=delete&orderid=<?php echo $orderid?>'"><h3>Delete</h3></button>
-                                    </div>
+                                                                        <div class="form-style-10">
+
+                                        <a href="../Customer Interface/CustomerOrder.php?deleteOrder=delete&orderid=<?php echo $orderid?>" class="btn-lg btn-danger button3 btn-block mt-2">Delete</a>
+
+                                        <!-- <button  class="btn btn-danger button2 btn-block mt-2" onclick="window.location.href='../Customer Interface/CustomerOrder.php?deleteOrder=delete&orderid=<?php echo $orderid?>'"><h3>Delete</h3></button> -->
                                 </td>
                             </tr>
                             <?php 
