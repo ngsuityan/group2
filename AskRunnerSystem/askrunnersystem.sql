@@ -111,8 +111,8 @@ CREATE TABLE `foodproduct` (
 --
 
 INSERT INTO `foodproduct` (`FD_PROID`, `SP_ID`, `FD_NAME`, `FD_TYPE`, `FD_BRAND`, `FD_PRICE`, `FD_STOCK`, `FD_EXPIRY_DATE`, `FD_CERTIFICATIONS`, `FD_SHIP_FEE`, `FD_ORIGIN`, `FD_SHIPS_FROM`, `FD_IMAGE`, `FD_PUBLISH`, `FD_DESCRIPTIONS`) VALUES
-(1, 2, 'Maggi Curry', 'Instant Noodle', 'Maggi', 4.00, 'Available', '2022-01-24', 'Halal Jakim', 4.00, 'Malaysia', 'Kuantan', 'megikari.jpg', '- ', 'MAGGI 2-MINN CURRY (79g x 5 Packs)'),
-(2, 2, 'Maggi Tomyam Udang', 'Instant Noodle', 'Maggi', 4.50, 'Available', '2022-06-14', 'Halal Jakim', 4.00, 'Malaysia', 'Kuantan', 'megitomyam.jpg', '- ', 'Maggi Tom Yum (79g x 5 packs)'),
+(1, 2, 'Maggi Curry', 'Instant Noodle', 'Maggi', 3.95, 'Available', '2022-01-24', 'Halal Jakim', 4.00, 'Malaysia', 'Kuantan', 'megikari.jpg', '- ', 'MAGGI 2-MINN CURRY (79g x 5 Packs)'),
+(2, 2, 'Maggi Tomyam Udang', 'Instant Noodle', 'Maggi', 4.15, 'Available', '2022-06-14', 'Halal Jakim', 4.00, 'Malaysia', 'Kuantan', 'megitomyam.jpg', '- ', 'Maggi Tom Yum (79g x 5 packs)'),
 (4, 5, 'Maggi Mi Goreng Cili Kampung', 'Instant Noodle', 'Maggi', 5.25, 'Available', '2022-07-25', 'Halal Jakin', 4.00, 'Malaysia', 'Kuantan', 'maggi cili kampung.jpg', '-', 'Maggi Mi Goren Cili ala Kampung (78g x 5 Packs)');
 
 -- --------------------------------------------------------
