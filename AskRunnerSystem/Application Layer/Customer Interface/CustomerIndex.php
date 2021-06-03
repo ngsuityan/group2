@@ -93,7 +93,7 @@
             </div>
             <?php
               }
-               }else if(isset($_GET['pet'])){
+               }else if(isset($_GET['pet'])){?>
                     <div class="col-md-8">
             <form method="POST" action="">
                 <div class="form-inline">
@@ -109,7 +109,7 @@
             <!--    end after choose product type to view    -->
             <!--    view product details after choose the product to view    -->
             <?php
-                    }
+                    
                 }else if(isset($_GET['type']) && isset($_GET['proid'])){
 
                     if (!empty($_GET['type']) && !empty($_GET['proid'])) {
