@@ -546,7 +546,7 @@
 					}
 					}
 //view and update pet
-					else if($view == "pet"){?><?php
+					else if($view == "pet"){?>
 						<div class="col-md-8">
             <form method="POST" action="">
                 <div class="form-inline">
