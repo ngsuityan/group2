@@ -46,6 +46,16 @@
             return $pet-> searchpetdata();
 		}
 
+		function sortpetasc(){
+			$pet = new pet();
+			return $pet-> sortpetascdata();
+		}
+
+		function sortpetdesc(){
+			$pet = new pet();
+			return $pet-> sortpetdescdata();
+		}
+
 		function spsearchpet($SP_ID, $keyword){
 			$pet = new pet();
 			$pet->keyword =$_POST['keyword'];
