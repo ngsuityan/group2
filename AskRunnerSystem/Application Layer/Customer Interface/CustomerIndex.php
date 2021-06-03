@@ -111,9 +111,10 @@
             </div>
             </form>
             <br/><br/>
-            <?php include'SearchPet.php'?>
+            
         </div>
     </div>
+    <?php include'SearchPet.php'?>
             <!--    end after choose product type to view    -->
             <!--    view product details after choose the product to view    -->
             <?php
