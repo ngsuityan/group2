@@ -52,6 +52,16 @@
             return $pet-> spsearchpetdata();
 		}
 
+		function sortpetasc(){
+			$pet = new pet();
+			return $pet-> sortpetascdata();
+		}
+
+		function sortpetdesc(){
+			$pet = new pet();
+			return $pet-> sortpetdescdata();
+		}
+
 		function editpet($PET_PROID){
 			$pet = new pet();
 
